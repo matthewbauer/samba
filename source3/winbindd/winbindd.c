@@ -244,7 +244,7 @@ static void winbindd_sig_term_handler(struct tevent_context *ev,
 
 	TALLOC_FREE(p);
 
-	DEBUG(0,("Got sig[%d] terminate (is_parent=%d)\n",
+	DEBUG(6,("Got sig[%d] terminate (is_parent=%d)\n",
 		 signum, is_parent));
 	terminate(is_parent);
 }

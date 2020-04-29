@@ -132,8 +132,8 @@ void daemon_ready(const char *daemon)
 	sd_notifyf(0, "READY=1\nSTATUS=%s: ready to serve connections...",
 		   daemon);
 #endif
-	DBG_ERR("daemon '%s' finished starting up and ready to serve "
-		"connections\n", daemon);
+	DBG_INFO("daemon '%s' finished starting up and ready to serve "
+		 "connections\n", daemon);
 }
 
 void daemon_status(const char *daemon, const char *msg)

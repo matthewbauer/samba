@@ -140,7 +140,7 @@ static void unbecome_local_master_success(struct subnet_record *subrec,
 
 	memcpy((char *)&force_new_election, userdata->data, sizeof(bool));
 
-	DEBUG(3,("unbecome_local_master_success: released name %s.\n",
+	DEBUG(6,("unbecome_local_master_success: released name %s.\n",
 		nmb_namestr(released_name)));
 
 	/* Now reset the workgroup and server state. */

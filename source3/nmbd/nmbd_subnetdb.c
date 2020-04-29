@@ -250,7 +250,7 @@ bool create_subnets(void)
 		daemon_status("nmbd",
 			      "No local IPv4 non-loopback interfaces "
 			      "available, waiting for interface ...");
-		DEBUG(0,("NOTE: NetBIOS name resolution is not supported for "
+		DEBUG(6,("NOTE: NetBIOS name resolution is not supported for "
 			 "Internet Protocol Version 6 (IPv6).\n"));
 	}
 

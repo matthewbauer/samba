@@ -56,7 +56,7 @@ struct tevent_context *nmbd_event_context(void)
 
 static void terminate(struct messaging_context *msg)
 {
-	DEBUG(0,("Got SIGTERM: going down...\n"));
+	DEBUG(6,("Got SIGTERM: going down...\n"));
 
 	/* Write out wins.dat file if samba is a WINS server */
 	wins_write_database(0,False);
